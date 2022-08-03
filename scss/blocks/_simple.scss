@@ -1,0 +1,135 @@
+.site-simple {
+    margin: 0;
+    padding: 0;
+}
+
+.simple-section {
+    position: relative;
+    margin: 0;
+    padding: 150px 0 146px 0;
+}
+
+.simple-section::after {
+    position: absolute;
+    content: " ";
+    width: 780px;
+    height: 780px;
+    z-index: -3;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url(../../images/bgimg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 400px 0;
+}
+
+.simple {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1110px;
+    @include space;
+}
+
+.simple__left--content {
+    margin: 0;
+    padding: 0;
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.simple__title {
+    margin: 0 0 24px 0;
+    padding: 0;
+    @include font(48px, 56px, 400, 'DM Serif Display');
+    letter-spacing: -0.369231px;
+    color: #36536B;
+}
+
+.simple__text {
+    margin: 0;
+    padding: 0;
+    @include font(15px, 28px, 400, 'Public Sans');
+    color: #6C8294;
+}
+
+.simple__img--tab {
+    display: none;
+}
+
+.simple__img--mob {
+    display: none;
+}
+
+@media screen and(max-width:980px) {
+    .simple-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .simple-section::after {
+        display: none;
+        background-image: none;
+    }
+
+    .simple {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .simple__left--content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .simple__title {
+        text-align: center;
+    }
+
+    .simple__text {
+        text-align: center;
+    }
+
+    .simple__img {
+        display: none;
+    }
+
+    .simple__img--tab {
+        display: block;
+        margin-left: 30px;
+    }
+}
+
+@media screen and(max-width:470px) {
+    .simple__img--tab {
+        display: none;
+    }
+
+    .simple__img--mob {
+        width: 60%;
+        display: block;
+        margin-left: 20px;
+    }
+
+    .simple__left--content {
+        .simple__title {
+            font-size: 36px;
+            line-height: 36px;
+        }
+    }
+
+}
+
+@media screen and(max-width:430px) {
+    .simple__img--mob {
+        width: 75%;
+    }
+}
+@media screen and(max-width:340px) {
+    .simple__img--mob {
+        width: 90%;
+    }
+}

@@ -1,0 +1,116 @@
+.site-footer {
+    margin: 0;
+    padding: 0;
+}
+
+.footer__section {
+    margin: 0;
+    padding: 31px 0;
+    background-image: url(../../images/foo.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1110px;
+    @include space;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__left--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list {
+    margin: 0 0 0 64px;
+    padding: 0;
+    @include space;
+    list-style: none;
+    gap: 40px;
+}
+
+.footer__item--link {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FBFCFE;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer__item--link:hover {
+    opacity: 1;
+    color: #FBFCFE;
+}
+
+.footer__right--content {
+    margin: 0 0 0 20px;
+    padding: 0;
+    max-width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    .social__link {
+        text-decoration: none;
+    }
+}
+
+.footer__img path:hover {
+    fill: #DA6D97;
+}
+
+.footer__img path:active {
+    opacity: 0.7;
+}
+
+@media screen and(max-width:710px) {
+    .footer__section {
+        padding: 41px 0;
+        background-image: url(../../images/footerbg.png);
+        background-size: 100%;
+        background-position: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__left--content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__list {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and(max-width:610px) {
+    .footer__list {
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .footer__item+.footer__item {
+        margin-top: 31px;
+    }
+
+}

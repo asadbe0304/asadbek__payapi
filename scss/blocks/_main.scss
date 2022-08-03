@@ -1,0 +1,344 @@
+.site-main {
+    margin: 0;
+    padding: 0 0 75px 0;
+}
+
+.hero-section {
+    // position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section::after {
+    position: absolute;
+    content: " ";
+    z-index: -3;
+    width: 780px;
+    height: 780px;
+    right: 0;
+    top: 0;
+    margin: 0;
+    background-image: url(../../images/bgimg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 115px -295px;
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+    max-width: 1110px;
+    @include space;
+}
+
+.hero__left {
+    margin: 0;
+    padding: 0;
+    max-width: 546px;
+    @include column;
+    align-items: flex-start;
+
+    .hero__title {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -0.553846px;
+        color: #36536B;
+        font-family: 'DM Serif Display';
+    }
+}
+
+.left__content {
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero__label {
+    margin: 41px 0 16px 0;
+    padding: 13px 0px 12px 20px;
+    max-width: 445px;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+}
+
+.hero__input--link {
+    @include btn;
+}
+
+.hero__input {
+    border: none;
+    outline: none;
+}
+
+.contact__link {
+    padding-left: 20px;
+    text-decoration: none;
+
+    .hero__text {
+        margin: 0px 0 0 0;
+        padding: 0;
+        @include font(15px, 18px, 400, 'Public Sans');
+        color: #6C8294;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.hero__img--tab {
+    display: none;
+}
+
+.hero__img--mob {
+    display: none;
+}
+
+.hero__input::placeholder {
+    @include font(15px, 18px, 700, "Public Sans");
+    color: #36536B;
+    opacity: 0.5;
+}
+
+.hero__mobile--link {
+    display: none;
+    @include btn;
+}
+
+@media screen and(max-width:1280px) {
+    .hero-section::after {
+        background-position: 220px -250px;
+    }
+
+}
+
+@media screen and(max-width:1190px) {
+    .hero-section::after {
+        background-position: 250px -250px;
+    }
+
+}
+
+@media screen and(max-width:1100px) {
+    .hero-section::after {
+        background-position: 280px -250px;
+    }
+
+}
+
+@media screen and(max-width:1060px) {
+    .hero-section::after {
+        background-position: 300px -250px;
+    }
+
+}
+
+@media screen and(max-width:1000px) {
+    .hero-section::after {
+        background-position: 360px -250px;
+    }
+
+}
+
+@media screen and(max-width:980px) {
+    .hero-section::after {
+        width: 100%;
+        height: 950px;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        background-image: url(../../images/roletab.png);
+        background-position: 0px -590px;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__img--tab {
+        display: block;
+    }
+
+    .hero {
+        margin: 0;
+        padding: 0;
+        @include column;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .hero__img {
+        width: 159;
+        height: 300;
+    }
+
+    .hero__left {
+        max-width: 70%;
+        text-align: center;
+        align-items: center;
+
+        .hero__title {
+            font-size: 48px;
+            line-height: 56px;
+            text-align: center;
+            letter-spacing: -0.369231px;
+        }
+    }
+
+    .left__content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and(max-width:870px) {
+    .hero-section::after {
+        background-position: 0 -560px;
+    }
+}
+
+@media screen and(max-width:850px) {
+    .hero-section::after {
+        background-position: 0 -495px;
+    }
+}
+
+@media screen and(max-width:800px) {
+    .hero-section::after {
+        background-position: 0 -450px;
+    }
+}
+
+@media screen and(max-width:730px) {
+    .hero-section::after {
+        width: 100%;
+        height: 780px;
+        background-image: url(../../images/bgimg.png);
+        background-position: 0 -380px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero__left {
+        width: 100%;
+
+        .hero__title {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+
+    .hero__input--link {
+        display: none;
+    }
+
+    .left__content {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .hero__label {
+        width: 100%;
+        padding: 16px 80px 14px 0px;
+        max-width: 500px;
+    }
+
+    .hero__mobile--link {
+        width: 100%;
+        margin-bottom: 24px;
+        padding: 16px 90px 14px 90px;
+        display: block;
+        max-width: 100%;
+    }
+}
+
+@media screen and(max-width:680px) {
+    .hero__img--tab {
+        display: none;
+    }
+
+    .hero__img--mob {
+        margin-left: 20px;
+        display: block;
+    }
+
+}
+
+@media screen and(max-width:630px) {
+    .hero-section::after {
+        background-position: 0 -320px;
+    }
+}
+
+@media screen and(max-width:570px) {
+    .hero-section::after {
+        background-position: 0 -270px;
+    }
+
+    .contact__link {
+        padding-left: 0;
+    }
+}
+
+@media screen and(max-width:570px) {
+    .hero-section::after {
+        background-position: 0 -240px;
+    }
+
+    .left__content {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero__label {
+        width: 100%;
+        padding: 11px 20px 10px 10px;
+    }
+
+    .hero__input {
+        width: 95%;
+    }
+
+    .hero__label::placeholder {
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    .hero__mobile--link {
+        width: 100%;
+        padding: 11px 35px 10px 35px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .hero-section::after {
+        background-position: 0 -180px;
+    }
+
+}
+
+@media screen and(max-width:400px) {
+    .hero-section::after {
+        background-position: 0 -100px;
+    }
+
+}

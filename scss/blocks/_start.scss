@@ -1,0 +1,119 @@
+.site-start {
+    margin: 0;
+    padding: 0;
+}
+
+.start {
+    margin: 0;
+    padding: 96px 0;
+    max-width: 1110px;
+    @include space;
+}
+
+.start__title {
+    margin: 0;
+    padding: 0;
+    @include font(48px, 56px, 400, 'DM Serif Display');
+    letter-spacing: -0.369231px;
+    color: #36536B;
+
+}
+
+.start__label {
+    margin: 0;
+    padding: 0px 0px 0px 27px;
+    max-width: 445px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+}
+.service__link__mob{
+    display: none;
+}
+.start__input {
+    border: none;
+    outline: none;
+}
+.service__link{
+    @include  btn;
+}
+.start__input::placeholder {
+    @include font(15px, 18px, 700, 'Public Sans');
+    color: #36536B;
+    opacity: 0.5;
+}
+.static:hover{
+    background: #DA6D97;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+}
+.static:active{
+    background: #BA4270;
+}
+@media screen and(max-width:890px) {
+    .start{
+        width: 100%;
+        padding: 100px 0;
+        flex-direction: column;
+    }
+    .start__label{
+        width: 100%;
+    }
+    .start__title{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+@media screen and(max-width:570px){
+    .start{
+        .start__title{
+            font-size: 36px;
+            line-height: 36px;
+        }
+    }
+    .start__label{
+        width: 80%;
+        padding-left: 0;
+        padding: 13px 158px 13px 27px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .service__link{
+            display: none;
+        }
+        .start__input::placeholder{
+            text-align: left;
+        }
+        .service__link__mob{
+            display: block;
+            @include btn;
+            padding: 12px 20px;
+            text-align: center;
+            margin-top: 16px;
+            width: 80%;
+        }
+}
+@media screen and(max-width:495px) {
+    .start__label{
+        padding: 13px 60px 12px 27px;
+        width: 80%;
+    }
+    .service__link__mob{
+        width: 80%;
+    }
+}
+@media screen and(max-width:370px){
+    .start__label{
+        padding: 13px 40px 12px 27px;
+    }
+}
+@media screen and(max-width:340px){
+    .start__label{
+        padding: 13px 30px 12px 27px;
+    }
+}
