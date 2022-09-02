@@ -1,0 +1,33 @@
+.about-section{
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #C71585;
+}
+
+.wrapper {
+    // position: absolute;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+}
+
+#date {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+#time {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+.about__title{
+    color:#fff;
+    font-size: 32px;
+    text-align: center;
+}
