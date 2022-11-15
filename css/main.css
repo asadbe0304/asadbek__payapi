@@ -1559,7 +1559,7 @@ img {
   }
 }
 .about-section {
-  padding: 100px 50px;
+  padding: 20px 50px 100px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1569,9 +1569,7 @@ img {
 }
 
 .wrapper {
-  top: 40%;
-  left: 25%;
-  right: 25%;
+  position: relative;
 }
 
 #date {
@@ -1581,12 +1579,18 @@ img {
 }
 
 #time {
+  position: absolute;
+  top: 110%;
+  z-index: 55;
   color: white;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .about__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
   color: #fff;
   font-size: 32px;
   text-align: center;
@@ -1595,14 +1599,15 @@ img {
 .site-footer {
   margin: 0;
   padding: 0;
+  background-image: url(../../images/foo.png);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-size: cover;
 }
 
 .footer__section {
   margin: 0;
   padding: 31px 0;
-  background-image: url(../../images/foo.png);
-  background-repeat: no-repeat;
-  background-position: 0;
 }
 
 .footer {

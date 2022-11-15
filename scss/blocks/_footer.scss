@@ -1,14 +1,15 @@
 .site-footer {
     margin: 0;
     padding: 0;
+    background-image: url(../../images/foo.png);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-size: cover;
 }
 
 .footer__section {
     margin: 0;
     padding: 31px 0;
-    background-image: url(../../images/foo.png);
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
 .footer {

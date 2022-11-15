@@ -1,5 +1,5 @@
-.about-section{
-    padding: 100px 50px;
+.about-section {
+    padding: 20px 50px 100px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,10 +9,7 @@
 }
 
 .wrapper {
-    // position: absolute;
-    top: 40%;
-    left: 25%;
-    right: 25%;
+    position: relative;
 }
 
 #date {
@@ -22,12 +19,19 @@
 }
 
 #time {
+    position: absolute;
+    top: 110%;
+    z-index: 55;
     color: white;
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
 }
-.about__title{
-    color:#fff;
+
+.about__title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #fff;
     font-size: 32px;
     text-align: center;
 }
